@@ -18,5 +18,6 @@ function curry(callback) {
         };
     };
 }
-
+const sum = (...numbers) => numbers.reduce((total, number) => total + number, 0);
+const curriedSum = curry(sum);
 module.export=curry
